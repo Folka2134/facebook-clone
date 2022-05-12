@@ -56,7 +56,7 @@ export const Header = () => {
           alt='profile Pic'
           layout='fixed'
         />
-        <p className='pr-6 whitespace-nowrap semi-bold'>Otis PM</p>
+        <p className='pr-6 pl-2 md:pl-0 whitespace-nowrap semi-bold'>{session.user.name.split(' ').slice(0, -1)}</p>
         <ViewGridIcon className='icon' />
         <ChatIcon className='icon' />
         <BellIcon className='icon' />
